@@ -1,6 +1,12 @@
 # Pit Wall
 
-Mapping the paddock as a market. One usable profile of every participant in a racing paddock, and three tools built on it: deals between the businesses already inside, outside businesses brought in, and teams finding their next driver and partner. Created for one race program heading into the Indy 500, across IndyCar and IMSA, and licensed to other programs since.
+Mapping the paddock as a market. Pit Wall holds one usable profile of every participant in a racing paddock, and runs three tools on it:
+
+1. **Sponsorship finder.** Finds outside businesses with a real reason to be at the track, checks they can sign without a committee, and works their decision makers as sponsors.
+2. **B2B deals inside the paddock.** Pairs the family businesses already behind the cars, so they buy and sell from each other and the savings fund their seats.
+3. **Driver finder.** Lets teams search every driver, the money behind each seat, and a professional route to whoever holds it, to find their next driver.
+
+Created for one race program heading into the Indy 500, across IndyCar and IMSA, and licensed to other programs since.
 
 **Case study:** [dandoungroup.com/case-studies/#pit-wall](https://dandoungroup.com/case-studies/#pit-wall) · **Live app:** [pitwall.dandoungroup.com](https://pitwall.dandoungroup.com/) (private, login required)
 
@@ -25,11 +31,11 @@ Two questions had the same shape:
 
 **One profile dataset.** A record for every driver: discipline, series, residence, the business behind the seat, its revenue where published, who holds the money, and a professional route to that person. Net worth is backed into from the series run cost and an assumed spend share, and is labelled a scenario until a sourced figure replaces it.
 
-**Tool one: inside deals.** Pairs businesses already in the paddock (a trucking company and a fruit exporter, a builder and a property owner) and pools family businesses into programs with the series' own partners. The worked example from the engagement is a fleet tire deal: a regional trucking company buys a fleet tire program from the series tire sponsor, an agricultural exporter moves its fruit on that fleet, the sponsor books volume, and the savings are split back into both families' seats. Each candidate deal is sized from buyer spend and seller capacity, with low, base and high cases and a five-year NPV.
+**Tool one: sponsorship finder (outside businesses).** Maps companies with a reason to be at the track this year, puts each through four gates (one person can decide alone, a budget line exists, there is a US surface to use what the car offers, the company can legally operate and promote here), scores the ones that clear on five axes out of 15, and works the decision makers through an outreach engine built so that a wrong email cannot leave.
 
-**Tool two: outside partners.** Maps companies with a reason to be at the track this year, puts each through four gates (one person can decide alone, a budget line exists, there is a US surface to use what the car offers, the company can legally operate and promote here), scores the ones that clear on five axes out of 15, and works the decision makers through an outreach engine built so that a wrong email cannot leave.
+**Tool two: B2B deals inside the paddock.** Pairs businesses already in the paddock (a trucking company and a fruit exporter, a builder and a property owner) and pools family businesses into programs with the series' own partners. The worked example from the engagement is a fleet tire deal: a regional trucking company buys a fleet tire program from the series tire sponsor, an agricultural exporter moves its fruit on that fleet, the sponsor books volume, and the savings are split back into both families' seats. Each candidate deal is sized from buyer spend and seller capacity, with low, base and high cases and a five-year NPV.
 
-**Tool three: talent.** Five driver lists over the same profiles (all, sports car, open wheel, US-based, international), so teams can find their next driver and the partners behind them.
+**Tool three: driver finder.** Five driver lists over the same profiles (all, sports car, open wheel, US-based, international), so teams can find their next driver and the partners behind them.
 
 **Licensed.** Built for one program and licensed to other programs since.
 
