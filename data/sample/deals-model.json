@@ -1,0 +1,185 @@
+{
+  "_note": "SYNTHETIC SAMPLE DATA. No real person, team, company or address appears in this file.",
+  "partners": [
+    {
+      "id": "series-tire",
+      "name": "Series Tire Partner",
+      "role": "Official tire supplier (sample)",
+      "category": "tires",
+      "buyers": {
+        "logistics": 0.025,
+        "construction": 0.006,
+        "agri_food": 0.004,
+        "materials": 0.008
+      },
+      "partner_margin": 0.15,
+      "effort_base": 2.5
+    },
+    {
+      "id": "series-fuel",
+      "name": "Series Fuel Partner",
+      "role": "Official fuel supplier (sample)",
+      "category": "energy",
+      "buyers": {
+        "logistics": 0.05,
+        "construction": 0.01,
+        "auto_retail": 0.01
+      },
+      "partner_margin": 0.08,
+      "effort_base": 3
+    }
+  ],
+  "model": {
+    "_assumptions": "Illustrative parameters for the sample. The live model keeps the same structure with researched shares.",
+    "rates": [
+      0.1,
+      0.15,
+      0.2
+    ],
+    "base_rate": 0.15,
+    "ramp": [
+      0.5,
+      1,
+      1,
+      1,
+      1
+    ],
+    "setup_per_effort": 15000,
+    "capture": {
+      "low": 0.04,
+      "base": 0.1,
+      "high": 0.2
+    },
+    "buyer_spend_cap": 25000000,
+    "categories": {
+      "freight": {
+        "label": "Freight contract",
+        "margin": 0.12,
+        "effort_base": 2,
+        "sellers": [
+          "logistics"
+        ],
+        "seller_cap": {
+          "low": 0.1,
+          "base": 0.2,
+          "high": 0.35
+        },
+        "buyers": {
+          "agri_food": 0.06,
+          "manufacturing": 0.05,
+          "consumer_goods": 0.05,
+          "materials": 0.08,
+          "retail": 0.04
+        }
+      },
+      "tires": {
+        "label": "Fleet tire program",
+        "margin": 0.15,
+        "effort_base": 2,
+        "sellers": [
+          "tire_retail"
+        ],
+        "seller_cap": {
+          "low": 0.03,
+          "base": 0.08,
+          "high": 0.15
+        },
+        "buyers": {
+          "logistics": 0.025,
+          "construction": 0.006,
+          "agri_food": 0.004,
+          "materials": 0.008
+        }
+      },
+      "fleet_service": {
+        "label": "Fleet maintenance contract",
+        "margin": 0.2,
+        "effort_base": 2,
+        "sellers": [
+          "auto_retail"
+        ],
+        "seller_cap": {
+          "low": 0.03,
+          "base": 0.08,
+          "high": 0.15
+        },
+        "buyers": {
+          "logistics": 0.03,
+          "construction": 0.01,
+          "agri_food": 0.005,
+          "energy": 0.005
+        }
+      },
+      "build": {
+        "label": "Build / renovation work",
+        "margin": 0.1,
+        "effort_base": 3,
+        "sellers": [
+          "construction"
+        ],
+        "seller_cap": {
+          "low": 0.03,
+          "base": 0.08,
+          "high": 0.15
+        },
+        "buyers": {
+          "real_estate": 0.25,
+          "hospitality": 0.04,
+          "manufacturing": 0.02,
+          "retail": 0.02
+        }
+      },
+      "materials": {
+        "label": "Building materials supply",
+        "margin": 0.12,
+        "effort_base": 2,
+        "sellers": [
+          "materials"
+        ],
+        "seller_cap": {
+          "low": 0.03,
+          "base": 0.08,
+          "high": 0.15
+        },
+        "buyers": {
+          "construction": 0.3,
+          "real_estate": 0.03
+        }
+      },
+      "food": {
+        "label": "Food service supply",
+        "margin": 0.1,
+        "effort_base": 2,
+        "sellers": [
+          "agri_food"
+        ],
+        "seller_cap": {
+          "low": 0.03,
+          "base": 0.08,
+          "high": 0.15
+        },
+        "buyers": {
+          "hospitality": 0.12,
+          "retail": 0.05
+        }
+      },
+      "it": {
+        "label": "Software contract",
+        "margin": 0.4,
+        "effort_base": 3,
+        "sellers": [
+          "tech"
+        ],
+        "seller_cap": {
+          "low": 0.02,
+          "base": 0.05,
+          "high": 0.1
+        },
+        "buyers": {
+          "logistics": 0.004,
+          "manufacturing": 0.003
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Log in | Pit Wall</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/app.css?v=8">
+<style>
+  body { display: flex; align-items: center; justify-content: center; padding: 24px 24px 84px; }
+  .login {
+    width: 100%; max-width: 400px;
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: 18px; padding: 30px 26px 26px;
+  }
+  .lights { display: flex; gap: 9px; justify-content: center; margin-bottom: 22px; }
+  .lights i {
+    width: 13px; height: 13px; border-radius: 50%;
+    background: var(--panel-3); border: 1px solid var(--line);
+  }
+  .lights i.on { background: var(--accent); border-color: var(--accent-soft); }
+  .lbrand { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 4px; }
+  .lbrand .flag { width: 30px; height: 30px; }
+  .lbrand h1 { font-size: 24px; font-weight: 800; font-style: italic; letter-spacing: 2px; text-transform: uppercase; color: var(--navy); }
+  .lbrand h1 .acc { color: var(--accent-soft); }
+  .lsub { color: var(--dim); font-size: 13px; text-align: center; margin-bottom: 26px; }
+  label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .9px; color: var(--mut); margin-bottom: 7px; font-weight: 700; }
+  .pwrow { position: relative; }
+  .pwrow input {
+    width: 100%; background: var(--bg); border: 1px solid var(--line); border-radius: 12px;
+    color: var(--ink); font-size: 17px; padding: 14px 62px 14px 15px; outline: none; font-family: inherit;
+  }
+  .pwrow .show {
+    position: absolute; right: 6px; top: 6px; bottom: 6px;
+    border: 0; background: none; color: var(--dim); font-size: 12px; font-weight: 700;
+    cursor: pointer; padding: 0 10px; border-radius: 8px; font-family: inherit;
+  }
+  .go {
+    width: 100%; margin-top: 16px; background: var(--accent-btn); color: #fff; border: 0;
+    border-radius: 12px; font-size: 16px; font-weight: 750; padding: 15px; cursor: pointer;
+    font-family: inherit; letter-spacing: .3px;
+  }
+  .go:active { filter: brightness(.85); }
+  .go:disabled { opacity: .6; cursor: default; }
+  .err { display: none; margin-top: 12px; color: var(--bad); font-size: 13px; text-align: center; }
+  .err.show { display: block; }
+</style>
+</head>
+<body>
+  <form class="login" id="f">
+    <div class="lights" aria-hidden="true" id="lights"><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="lbrand">
+      <svg class="flag" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="0" y="0" width="24" height="24" rx="5" fill="#fff"/>
+        <rect x="0" y="0" width="8" height="8" fill="#10122b"/>
+        <rect x="16" y="0" width="8" height="8" fill="#10122b"/>
+        <rect x="8" y="8" width="8" height="8" fill="#10122b"/>
+        <rect x="0" y="16" width="8" height="8" fill="#10122b"/>
+        <rect x="16" y="16" width="8" height="8" fill="#10122b"/>
+      </svg>
+      <h1>Pit<span class="acc"> Wall</span></h1>
+    </div>
+    <p class="lsub">Paddock partnership console &middot; sample data</p>
+    <label for="pw">Password</label>
+    <div class="pwrow">
+      <input id="pw" name="password" type="password" autocomplete="current-password" autocapitalize="off" autocorrect="off" autofocus>
+      <button class="show" id="show" type="button" aria-label="Show password">SHOW</button>
+    </div>
+    <button id="go" class="go" type="submit">Enter the pit wall</button>
+    <p class="err" id="err">Wrong password. Try again.</p>
+  </form>
+<script>
+  "use strict";
+  var f = document.getElementById("f");
+  var pw = document.getElementById("pw");
+  var go = document.getElementById("go");
+  var err = document.getElementById("err");
+  var show = document.getElementById("show");
+  var lights = document.getElementById("lights").children;
+  show.addEventListener("click", function () {
+    var hidden = pw.type === "password";
+    pw.type = hidden ? "text" : "password";
+    show.textContent = hidden ? "HIDE" : "SHOW";
+    show.setAttribute("aria-label", hidden ? "Hide password" : "Show password");
+    pw.focus();
+  });
+  f.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    err.classList.remove("show");
+    go.disabled = true;
+    try {
+      var res = await fetch("/api/login", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ password: pw.value }),
+      });
+      if (res.ok) {
+        for (var i = 0; i < lights.length; i++) lights[i].classList.add("on");
+        var next = new URLSearchParams(location.search).get("next") || "/";
+        if (!/^\/(?!\/)/.test(next)) next = "/";
+        setTimeout(function () { location.href = next; }, 350);
+        return;
+      }
+      err.textContent = "Wrong password. Try again.";
+      err.classList.add("show");
+      pw.select();
+      go.disabled = false;
+    } catch (ex) {
+      err.textContent = "Network error. Try again.";
+      err.classList.add("show");
+      go.disabled = false;
+    }
+  });
+</script>
+</body>
+</html>

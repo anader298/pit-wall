@@ -1,0 +1,66 @@
+/* Contacts screen (slice 4), layout per design-preview/contacts.html.
+   Tokens and shared components come from /assets/app.css. */
+.topcontrols { display: flex; flex-direction: column; gap: 10px; }
+.crow { display: flex; align-items: center; gap: 10px; }
+.crow .searchbar { flex: 1; }
+.dlbtn { flex: none; }
+.dlbtn svg { width: 15px; height: 15px; }
+.searchbar .clr { border: 0; background: none; color: var(--dim); cursor: pointer; font-size: 17px; line-height: 1; padding: 0 2px; font-family: inherit; display: none; }
+.searchbar.has .clr { display: block; }
+.searchbar .clr:hover { color: var(--navy); }
+.seg .c { color: var(--dim); font-weight: 500; margin-left: 3px; }
+.statuschips { margin-top: 10px; }
+
+/* Phone: card rows */
+.clist { display: flex; flex-direction: column; gap: 9px; margin-top: 12px; }
+.crd { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 13px 15px; }
+.crd.tap { cursor: pointer; }
+.crd.off { opacity: .7; }
+.crd .r1 { display: flex; align-items: center; gap: 8px; }
+.crd .nm { font-weight: 750; font-size: 15px; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.crd .lnkbtn { margin-left: auto; width: 34px; height: 34px; border-radius: 9px; flex: none; border: 1px solid var(--line); color: var(--accent-soft); display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 800; }
+.crd .lnkbtn:hover { border-color: var(--accent); text-decoration: none; }
+.crd .r2 { color: var(--mut); font-size: 13px; margin-top: 2px; }
+.crd .r2 b { color: var(--ink); font-weight: 600; }
+.crd .r3 { display: flex; align-items: center; gap: 7px; margin-top: 8px; flex-wrap: wrap; font-size: 12.5px; }
+.crd .em { color: var(--mut); font-variant-numeric: tabular-nums; word-break: break-all; }
+.crd .meterrow { margin-top: 9px; }
+.crd .meterrow .val { font-size: 11.5px; }
+.crd.open { border-color: var(--accent); }
+.crd .detail { display: none; }
+.crd.open .detail { border-top: 1px solid var(--line-soft); margin-top: 11px; padding-top: 11px; display: flex; flex-direction: column; gap: 6px; font-size: 12.5px; }
+.detail .kv { display: flex; gap: 10px; }
+.detail .k { color: var(--dim); width: 92px; flex: none; }
+
+/* Desktop table rows for people no longer being contacted */
+tr.off td { opacity: .65; }
+
+/* Sortable headers: click cycles ascending, descending, original order */
+th[data-sort] { cursor: pointer; user-select: none; white-space: nowrap; }
+th[data-sort]::after { content: "\25BE"; opacity: 0; margin-left: 4px; font-size: 10px; }
+th[data-sort]:hover::after { opacity: .4; }
+th[data-sort].asc::after { content: "\25B4"; opacity: 1; color: var(--accent-soft); }
+th[data-sort].desc::after { content: "\25BE"; opacity: 1; color: var(--accent-soft); }
+
+/* Pager per mock: count on the left, numbered pages, navy current page */
+.pager { gap: 6px; margin-top: 14px; font-size: 13px; color: var(--mut); flex-wrap: wrap; }
+.pager .pg { min-width: 34px; height: 34px; border-radius: 9px; border: 1px solid var(--line); background: var(--panel); color: var(--mut); font-family: inherit; font-size: 13px; font-weight: 650; cursor: pointer; }
+.pager .pg:hover { border-color: var(--dim); }
+.pager .pg:disabled { opacity: .45; cursor: default; border-color: var(--line); }
+.pager .pg.on { background: var(--navy); color: #fff; border-color: var(--navy); }
+.pager .tot { margin-right: auto; }
+
+/* Skeleton lines (single opacity pulse comes from .sk in app.css) */
+.sk.l1 { height: 15px; width: 45%; }
+.sk.l2 { height: 12px; width: 72%; margin-top: 9px; }
+.sk.l3 { height: 12px; width: 55%; margin-top: 10px; }
+.sk.lt { height: 12px; width: 70%; min-width: 40px; }
+.empty .btn { margin-top: 10px; }
+
+.deskonly { display: none; }
+@media (min-width: 900px) {
+  .topcontrols { flex-direction: row; align-items: center; }
+  .crow { flex: 1; }
+  .clist { display: none; }
+  .deskonly { display: block; margin-top: 14px; }
+}

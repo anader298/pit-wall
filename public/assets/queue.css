@@ -1,0 +1,109 @@
+
+.stickynote { color: var(--dim); font-size: 12.5px; margin: 10px 2px 14px; }
+
+.minibar {
+  position: sticky; top: 8px; z-index: 30;
+  display: flex; align-items: center; gap: 10px;
+  background: var(--navy); color: #fff; border-radius: 999px;
+  padding: 8px 10px 8px 16px; margin: 0 0 12px;
+  font-size: 13px; font-weight: 650;
+}
+.minibar .jump {
+  margin-left: auto; background: var(--accent-btn); color: #fff;
+  border: 0; border-radius: 999px; padding: 6px 14px;
+  font: inherit; font-size: 12.5px; font-weight: 650; cursor: pointer;
+}
+@media (min-width: 900px) { .minibar { display: none; } }
+
+.draft { margin-bottom: 12px; }
+.draft .head { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; }
+.draft .who { font-weight: 750; font-size: 15px; color: var(--navy); }
+.draft .meta { margin-top: 3px; }
+.draft .meta b { color: var(--ink); font-weight: 600; }
+.draft .subject { margin-top: 12px; }
+.draft .body {
+  white-space: pre-wrap; background: var(--panel-2); border: 1px solid var(--line-soft);
+  border-radius: 11px; padding: 12px 14px; font-size: 13.5px; margin-top: 8px; color: var(--ink);
+}
+.draft .body.clamp {
+  display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; overflow: hidden;
+}
+.expand {
+  background: none; border: 0; color: var(--accent-soft); font-family: inherit;
+  font-size: 12.5px; font-weight: 650; cursor: pointer; padding: 6px 0 0;
+}
+.scorerow { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 9px; }
+.draft .actions { display: flex; gap: 9px; margin-top: 12px; flex-wrap: wrap; }
+.draft .actions .btn { flex: 1; min-width: 130px; }
+@media (min-width: 900px) { .draft .actions .btn { flex: 0 0 auto; min-width: 190px; } }
+
+.confirmbar {
+  display: flex; align-items: center; gap: 9px; flex-wrap: wrap; margin-top: 12px;
+  border: 1px solid var(--line); border-radius: 12px; background: var(--panel-2);
+  padding: 10px 13px; font-size: 13px;
+}
+.confirmbar .q { font-weight: 650; }
+.confirmbar .btns { display: flex; gap: 8px; margin-left: auto; }
+
+.rejectpanel {
+  margin-top: 12px; border: 1px solid var(--line); border-radius: 12px;
+  background: var(--panel-2); padding: 12px 14px;
+}
+.rejectpanel .rlabel {
+  font-size: 12px; font-weight: 700; color: var(--mut);
+  text-transform: uppercase; letter-spacing: .6px; margin-bottom: 8px;
+}
+.reasons { display: flex; gap: 7px; flex-wrap: wrap; margin-bottom: 10px; }
+.reasons .fchip { padding: 6px 12px; font-size: 12.5px; }
+.rejectpanel textarea {
+  width: 100%; background: var(--bg); border: 1px solid var(--line); border-radius: 10px;
+  color: var(--ink); font-family: inherit; font-size: 13.5px; padding: 9px 11px;
+  resize: none; outline: none;
+}
+.rejectpanel textarea:focus { border-color: var(--accent-soft); }
+.rejectpanel .rbtns { display: flex; gap: 8px; margin-top: 10px; justify-content: flex-end; }
+
+.placedbar, .rejectedbar {
+  display: flex; align-items: center; gap: 9px; margin-top: 12px;
+  background: rgba(23, 143, 78, .07); border: 1px solid rgba(23, 143, 78, .3);
+  border-radius: 11px; padding: 10px 13px; font-size: 13px; color: var(--good); font-weight: 600;
+}
+.rejectedbar {
+  background: rgba(208, 60, 68, .06); border-color: rgba(208, 60, 68, .3); color: var(--bad);
+}
+.placedbar .t, .rejectedbar .t { margin-left: auto; color: var(--dim); font-weight: 500; font-size: 12px; }
+.draft.decided { opacity: .85; }
+
+.blocknote { color: var(--bad); font-size: 12.5px; margin-top: 8px; }
+
+.qempty { text-align: center; padding: 34px 18px; }
+.qempty h3 { margin: 0 0 8px; font-size: 16px; color: var(--navy); }
+.qempty p { margin: 0 auto; max-width: 46em; color: var(--mut); font-size: 13px; line-height: 1.55; }
+.qempty .when { color: var(--dim); font-size: 12px; margin-top: 12px; }
+
+.skcard .l { display: block; height: 13px; margin: 9px 0; }
+.skcard .l.w40 { width: 40%; } .skcard .l.w65 { width: 65%; } .skcard .l.w85 { width: 85%; }
+.skcard .blk { display: block; height: 96px; border-radius: 11px; margin-top: 10px; }
+
+/* Shown when a refresh failed but a saved copy is still on screen. */
+.stalestrip {
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--warn);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  color: var(--ink);
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+.stalestrip .linkish {
+  background: none;
+  border: 0;
+  padding: 4px 2px;
+  min-height: 32px;
+  color: var(--accent-soft);
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}

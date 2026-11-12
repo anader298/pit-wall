@@ -1,0 +1,13 @@
+/* Dashboard-only styles; shared styles live in app.css */
+.mla{margin-left:auto}
+.acctlist{display:flex;flex-direction:column;gap:10px}
+.parkhead{color:var(--dim);font-size:11px;text-transform:uppercase;letter-spacing:.8px;font-weight:700;margin:14px 0 8px}
+.covrow{display:flex;flex-direction:column;gap:12px;margin-top:12px}
+.stack i[data-n]{min-width:4px}
+.chart .ec{color:var(--mut);font-size:13px;padding:40px 0;text-align:center}
+/* cap columns so 1-2 data days do not fill the panel; same cap on x labels keeps alignment */
+.chart .cols .colgrp,.chart .xlabels span{max-width:96px}
+.skblock{height:96px}
+.skpanel{height:190px}
+.skrow{height:24px;margin-bottom:8px}
+@media (min-width:900px){.covrow{flex-direction:row}.covrow .kpi{flex:1}}

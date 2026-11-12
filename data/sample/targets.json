@@ -1,0 +1,820 @@
+{
+  "_note": "SYNTHETIC SAMPLE DATA. No real person, team, company or address appears in this file.",
+  "companies": [
+    {
+      "id": 1,
+      "name": "Example Neobank Co",
+      "vertical": "Fintech and neobanking",
+      "signal": "Hiring a Head of US Growth after a US card launch",
+      "why_they_fit": "Hiring a Head of US Growth after a US card launch; a race weekend puts its buyers in one room.",
+      "axes": {
+        "proven_sport_spend": 2,
+        "us_intent": 3,
+        "budget_capacity": 2,
+        "us_viability": 3,
+        "timing": 3
+      },
+      "gates": {
+        "authority": "pass",
+        "budget": "pass",
+        "us_activation": "pass",
+        "compliance": "pass"
+      },
+      "status": "target",
+      "domain": "example-neobank-co.example"
+    },
+    {
+      "id": 2,
+      "name": "Sample Growth Brands",
+      "vertical": "Inc. 5000 fast growers",
+      "signal": "Founder-led, on a fast-grower list three years running",
+      "why_they_fit": "Founder-led, on a fast-grower list three years running; a race weekend puts its buyers in one room.",
+      "axes": {
+        "proven_sport_spend": 1,
+        "us_intent": 2,
+        "budget_capacity": 2,
+        "us_viability": 3,
+        "timing": 2
+      },
+      "gates": {
+        "authority": "pass",
+        "budget": "partial",
+        "us_activation": "pass",
+        "compliance": "pass"
+      },
+      "status": "target",
+      "domain": "sample-growth-brands.example"
+    },
+    {
+      "id": 3,
+      "name": "Demo Digital Assets",
+      "vertical": "Crypto and digital assets",
+      "signal": "Registered as a money services business in new states",
+      "why_they_fit": "Registered as a money services business in new states; a race weekend puts its buyers in one room.",
+      "axes": {
+        "proven_sport_spend": 2,
+        "us_intent": 3,
+        "budget_capacity": 3,
+        "us_viability": 1,
+        "timing": 3
+      },
+      "gates": {
+        "authority": "pass",
+        "budget": "pass",
+        "us_activation": "pass",
+        "compliance": "partial"
+      },
+      "status": "watchlist",
+      "domain": "demo-digital-assets.example"
+    },
+    {
+      "id": 4,
+      "name": "Example Sportsbook Ltd",
+      "vertical": "Gambling and sports betting",
+      "signal": "Active shirt partner in another sport, no US licence yet",
+      "why_they_fit": "Active shirt partner in another sport, no US licence yet; a race weekend puts its buyers in one room.",
+      "axes": {
+        "proven_sport_spend": 3,
+        "us_intent": 2,
+        "budget_capacity": 3,
+        "us_viability": 0,
+        "timing": 2
+      },
+      "gates": {
+        "authority": "pass",
+        "budget": "pass",
+        "us_activation": "fail",
+        "compliance": "fail"
+      },
+      "status": "watchlist",
+      "domain": "example-sportsbook-ltd.example"
+    },
+    {
+      "id": 5,
+      "name": "Sample Appliance Co",
+      "vertical": "Consumer tech and appliances",
+      "signal": "US retail rollout announced",
+      "why_they_fit": "US retail rollout announced; a race weekend puts its buyers in one room.",
+      "axes": {
+        "proven_sport_spend": 1,
+        "us_intent": 3,
+        "budget_capacity": 2,
+        "us_viability": 3,
+        "timing": 3
+      },
+      "gates": {
+        "authority": "partial",
+        "budget": "pass",
+        "us_activation": "pass",
+        "compliance": "pass"
+      },
+      "status": "target",
+      "domain": "sample-appliance-co.example"
+    },
+    {
+      "id": 6,
+      "name": "Placeholder Challenger Inc",
+      "vertical": "Challenger brands",
+      "signal": "Relaunching the brand in the US this year",
+      "why_they_fit": "Relaunching the brand in the US this year; a race weekend puts its buyers in one room.",
+      "axes": {
+        "proven_sport_spend": 2,
+        "us_intent": 3,
+        "budget_capacity": 2,
+        "us_viability": 3,
+        "timing": 3
+      },
+      "gates": {
+        "authority": "pass",
+        "budget": "pass",
+        "us_activation": "pass",
+        "compliance": "pass"
+      },
+      "status": "target",
+      "domain": "placeholder-challenger-inc.example"
+    },
+    {
+      "id": 7,
+      "name": "Example Delivery Co",
+      "vertical": "Ride-share, delivery, logistics",
+      "signal": "Expanding to new US metros",
+      "why_they_fit": "Expanding to new US metros; a race weekend puts its buyers in one room.",
+      "axes": {
+        "proven_sport_spend": 2,
+        "us_intent": 2,
+        "budget_capacity": 3,
+        "us_viability": 3,
+        "timing": 2
+      },
+      "gates": {
+        "authority": "partial",
+        "budget": "pass",
+        "us_activation": "pass",
+        "compliance": "pass"
+      },
+      "status": "target",
+      "domain": "example-delivery-co.example"
+    },
+    {
+      "id": 8,
+      "name": "Sample Energy Drinks",
+      "vertical": "Energy drinks and beverage",
+      "signal": "Distributor recruitment drive in the South",
+      "why_they_fit": "Distributor recruitment drive in the South; a race weekend puts its buyers in one room.",
+      "axes": {
+        "proven_sport_spend": 3,
+        "us_intent": 3,
+        "budget_capacity": 2,
+        "us_viability": 3,
+        "timing": 2
+      },
+      "gates": {
+        "authority": "pass",
+        "budget": "pass",
+        "us_activation": "pass",
+        "compliance": "pass"
+      },
+      "status": "target",
+      "domain": "sample-energy-drinks.example"
+    },
+    {
+      "id": 9,
+      "name": "Demo Outdoor Gear",
+      "vertical": "Americana and outdoor",
+      "signal": "New dealer program announced",
+      "why_they_fit": "New dealer program announced; a race weekend puts its buyers in one room.",
+      "axes": {
+        "proven_sport_spend": 1,
+        "us_intent": 2,
+        "budget_capacity": 1,
+        "us_viability": 3,
+        "timing": 2
+      },
+      "gates": {
+        "authority": "pass",
+        "budget": "partial",
+        "us_activation": "pass",
+        "compliance": "pass"
+      },
+      "status": "target",
+      "domain": "demo-outdoor-gear.example"
+    },
+    {
+      "id": 10,
+      "name": "Example Marketplace",
+      "vertical": "E-commerce and retail",
+      "signal": "US warehouse opening",
+      "why_they_fit": "US warehouse opening; a race weekend puts its buyers in one room.",
+      "axes": {
+        "proven_sport_spend": 1,
+        "us_intent": 2,
+        "budget_capacity": 2,
+        "us_viability": 3,
+        "timing": 1
+      },
+      "gates": {
+        "authority": "fail",
+        "budget": "pass",
+        "us_activation": "pass",
+        "compliance": "pass"
+      },
+      "status": "target",
+      "domain": "example-marketplace.example"
+    },
+    {
+      "id": 11,
+      "name": "Sample eSIM Co",
+      "vertical": "Travel and connectivity",
+      "signal": "Launch campaign for US travellers",
+      "why_they_fit": "Launch campaign for US travellers; a race weekend puts its buyers in one room.",
+      "axes": {
+        "proven_sport_spend": 2,
+        "us_intent": 3,
+        "budget_capacity": 1,
+        "us_viability": 3,
+        "timing": 3
+      },
+      "gates": {
+        "authority": "pass",
+        "budget": "partial",
+        "us_activation": "pass",
+        "compliance": "pass"
+      },
+      "status": "target",
+      "domain": "sample-esim-co.example"
+    },
+    {
+      "id": 12,
+      "name": "Demo Predictions",
+      "vertical": "Prediction markets",
+      "signal": "Raised a growth round; state licensing in progress",
+      "why_they_fit": "Raised a growth round; state licensing in progress; a race weekend puts its buyers in one room.",
+      "axes": {
+        "proven_sport_spend": 1,
+        "us_intent": 3,
+        "budget_capacity": 3,
+        "us_viability": 2,
+        "timing": 3
+      },
+      "gates": {
+        "authority": "pass",
+        "budget": "pass",
+        "us_activation": "partial",
+        "compliance": "partial"
+      },
+      "status": "target",
+      "domain": "demo-predictions.example"
+    },
+    {
+      "id": 13,
+      "name": "Example Streaming",
+      "vertical": "Streaming and entertainment",
+      "signal": "Launching a motorsport content vertical",
+      "why_they_fit": "Launching a motorsport content vertical; a race weekend puts its buyers in one room.",
+      "axes": {
+        "proven_sport_spend": 2,
+        "us_intent": 2,
+        "budget_capacity": 3,
+        "us_viability": 3,
+        "timing": 2
+      },
+      "gates": {
+        "authority": "partial",
+        "budget": "pass",
+        "us_activation": "pass",
+        "compliance": "pass"
+      },
+      "status": "target",
+      "domain": "example-streaming.example"
+    },
+    {
+      "id": 14,
+      "name": "Sample Air",
+      "vertical": "Airlines and aviation",
+      "signal": "New US routes this season",
+      "why_they_fit": "New US routes this season; a race weekend puts its buyers in one room.",
+      "axes": {
+        "proven_sport_spend": 3,
+        "us_intent": 3,
+        "budget_capacity": 3,
+        "us_viability": 3,
+        "timing": 2
+      },
+      "gates": {
+        "authority": "fail",
+        "budget": "pass",
+        "us_activation": "pass",
+        "compliance": "pass"
+      },
+      "status": "target",
+      "domain": "sample-air.example"
+    }
+  ],
+  "contacts": [
+    {
+      "id": 1,
+      "company_id": 1,
+      "full_name": "Avery Example",
+      "title": "Chief Marketing Officer",
+      "linkedin_url": "https://profiles.example/avery-example-1",
+      "email": "avery.example@example-neobank-co.example",
+      "email_evidence": "linkedin_match",
+      "email_confidence": "verified",
+      "email_source": "sample source",
+      "status": "new",
+      "priority": 1,
+      "vertical": "Fintech and neobanking"
+    },
+    {
+      "id": 2,
+      "company_id": 1,
+      "full_name": "Hayden Placeholder",
+      "title": "General Manager, US",
+      "linkedin_url": null,
+      "email": null,
+      "email_evidence": "none",
+      "email_confidence": "none",
+      "email_source": null,
+      "status": "new",
+      "priority": 2,
+      "vertical": "Fintech and neobanking"
+    },
+    {
+      "id": 3,
+      "company_id": 2,
+      "full_name": "Jamie Demo",
+      "title": "General Manager, US",
+      "linkedin_url": "https://profiles.example/jamie-demo-3",
+      "email": "jamie.demo@sample-growth-brands.example",
+      "email_evidence": "linkedin_match",
+      "email_confidence": "verified",
+      "email_source": "sample source",
+      "status": "new",
+      "priority": 1,
+      "vertical": "Inc. 5000 fast growers"
+    },
+    {
+      "id": 4,
+      "company_id": 2,
+      "full_name": "Parker Testcase",
+      "title": "Founder and CEO",
+      "linkedin_url": null,
+      "email": "parker.testcase@sample-growth-brands.example",
+      "email_evidence": "pattern_guess",
+      "email_confidence": "unverified",
+      "email_source": "sample source",
+      "status": "new",
+      "priority": 2,
+      "vertical": "Inc. 5000 fast growers"
+    },
+    {
+      "id": 5,
+      "company_id": 2,
+      "full_name": "Taylor Sample",
+      "title": "Chief Marketing Officer",
+      "linkedin_url": null,
+      "email": null,
+      "email_evidence": "none",
+      "email_confidence": "none",
+      "email_source": null,
+      "status": "departed",
+      "priority": 3,
+      "vertical": "Inc. 5000 fast growers"
+    },
+    {
+      "id": 6,
+      "company_id": 3,
+      "full_name": "Robin Example",
+      "title": "Head of Partnerships",
+      "linkedin_url": "https://profiles.example/robin-example-6",
+      "email": "robin.example@demo-digital-assets.example",
+      "email_evidence": "linkedin_match",
+      "email_confidence": "verified",
+      "email_source": "sample source",
+      "status": "new",
+      "priority": 1,
+      "vertical": "Crypto and digital assets"
+    },
+    {
+      "id": 7,
+      "company_id": 3,
+      "full_name": "Riley Placeholder",
+      "title": "VP Brand",
+      "linkedin_url": null,
+      "email": "riley.placeholder@demo-digital-assets.example",
+      "email_evidence": "pattern_guess",
+      "email_confidence": "unverified",
+      "email_source": "sample source",
+      "status": "new",
+      "priority": 2,
+      "vertical": "Crypto and digital assets"
+    },
+    {
+      "id": 8,
+      "company_id": 4,
+      "full_name": "Sam Demo",
+      "title": "VP Brand",
+      "linkedin_url": "https://profiles.example/sam-demo-8",
+      "email": "sam.demo@example-sportsbook-ltd.example",
+      "email_evidence": "linkedin_match",
+      "email_confidence": "verified",
+      "email_source": "sample source",
+      "status": "new",
+      "priority": 1,
+      "vertical": "Gambling and sports betting"
+    },
+    {
+      "id": 9,
+      "company_id": 4,
+      "full_name": "Morgan Testcase",
+      "title": "Head of Growth",
+      "linkedin_url": "https://profiles.example/morgan-testcase-9",
+      "email": "morgan.testcase@example-sportsbook-ltd.example",
+      "email_evidence": "linkedin_match",
+      "email_confidence": "verified",
+      "email_source": "sample source",
+      "status": "new",
+      "priority": 2,
+      "vertical": "Gambling and sports betting"
+    },
+    {
+      "id": 10,
+      "company_id": 4,
+      "full_name": "Drew Sample",
+      "title": "Head of Partnerships",
+      "linkedin_url": null,
+      "email": "drew.sample@example-sportsbook-ltd.example",
+      "email_evidence": "domain_full_name",
+      "email_confidence": "probable",
+      "email_source": "sample source",
+      "status": "new",
+      "priority": 3,
+      "vertical": "Gambling and sports betting"
+    },
+    {
+      "id": 11,
+      "company_id": 5,
+      "full_name": "Casey Example",
+      "title": "Founder and CEO",
+      "linkedin_url": "https://profiles.example/casey-example-11",
+      "email": "casey.example@sample-appliance-co.example",
+      "email_evidence": "linkedin_match",
+      "email_confidence": "verified",
+      "email_source": "sample source",
+      "status": "new",
+      "priority": 1,
+      "vertical": "Consumer tech and appliances"
+    },
+    {
+      "id": 12,
+      "company_id": 5,
+      "full_name": "Reese Placeholder",
+      "title": "Chief Marketing Officer",
+      "linkedin_url": "https://profiles.example/reese-placeholder-12",
+      "email": "reese.placeholder@sample-appliance-co.example",
+      "email_evidence": "linkedin_match",
+      "email_confidence": "verified",
+      "email_source": "sample source",
+      "status": "new",
+      "priority": 2,
+      "vertical": "Consumer tech and appliances"
+    },
+    {
+      "id": 13,
+      "company_id": 6,
+      "full_name": "Jordan Demo",
+      "title": "Chief Marketing Officer",
+      "linkedin_url": "https://profiles.example/jordan-demo-13",
+      "email": "jordan.demo@placeholder-challenger-inc.example",
+      "email_evidence": "linkedin_match",
+      "email_confidence": "verified",
+      "email_source": "sample source",
+      "status": "new",
+      "priority": 1,
+      "vertical": "Challenger brands"
+    },
+    {
+      "id": 14,
+      "company_id": 6,
+      "full_name": "Quinn Testcase",
+      "title": "General Manager, US",
+      "linkedin_url": null,
+      "email": "quinn.testcase@placeholder-challenger-inc.example",
+      "email_evidence": "company_level",
+      "email_confidence": "quarantined",
+      "email_source": "sample source",
+      "status": "new",
+      "priority": 2,
+      "vertical": "Challenger brands"
+    },
+    {
+      "id": 15,
+      "company_id": 7,
+      "full_name": "Alex Sample",
+      "title": "General Manager, US",
+      "linkedin_url": "https://profiles.example/alex-sample-15",
+      "email": "alex.sample@example-delivery-co.example",
+      "email_evidence": "linkedin_match",
+      "email_confidence": "verified",
+      "email_source": "sample source",
+      "status": "new",
+      "priority": 1,
+      "vertical": "Ride-share, delivery, logistics"
+    },
+    {
+      "id": 16,
+      "company_id": 7,
+      "full_name": "Avery Example",
+      "title": "Founder and CEO",
+      "linkedin_url": null,
+      "email": "avery.example@example-delivery-co.example",
+      "email_evidence": "domain_full_name",
+      "email_confidence": "probable",
+      "email_source": "sample source",
+      "status": "new",
+      "priority": 2,
+      "vertical": "Ride-share, delivery, logistics"
+    },
+    {
+      "id": 17,
+      "company_id": 7,
+      "full_name": "Hayden Placeholder",
+      "title": "Chief Marketing Officer",
+      "linkedin_url": "https://profiles.example/hayden-placeholder-17",
+      "email": "hayden.placeholder@example-delivery-co.example",
+      "email_evidence": "linkedin_match",
+      "email_confidence": "verified",
+      "email_source": "sample source",
+      "status": "departed",
+      "priority": 3,
+      "vertical": "Ride-share, delivery, logistics"
+    },
+    {
+      "id": 18,
+      "company_id": 8,
+      "full_name": "Jamie Demo",
+      "title": "Head of Partnerships",
+      "linkedin_url": "https://profiles.example/jamie-demo-18",
+      "email": "jamie.demo@sample-energy-drinks.example",
+      "email_evidence": "linkedin_match",
+      "email_confidence": "verified",
+      "email_source": "sample source",
+      "status": "new",
+      "priority": 1,
+      "vertical": "Energy drinks and beverage"
+    },
+    {
+      "id": 19,
+      "company_id": 8,
+      "full_name": "Parker Testcase",
+      "title": "VP Brand",
+      "linkedin_url": null,
+      "email": null,
+      "email_evidence": "none",
+      "email_confidence": "none",
+      "email_source": null,
+      "status": "new",
+      "priority": 2,
+      "vertical": "Energy drinks and beverage"
+    },
+    {
+      "id": 20,
+      "company_id": 9,
+      "full_name": "Taylor Sample",
+      "title": "VP Brand",
+      "linkedin_url": "https://profiles.example/taylor-sample-20",
+      "email": "taylor.sample@demo-outdoor-gear.example",
+      "email_evidence": "linkedin_match",
+      "email_confidence": "verified",
+      "email_source": "sample source",
+      "status": "new",
+      "priority": 1,
+      "vertical": "Americana and outdoor"
+    },
+    {
+      "id": 21,
+      "company_id": 9,
+      "full_name": "Robin Example",
+      "title": "Head of Growth",
+      "linkedin_url": "https://profiles.example/robin-example-21",
+      "email": "robin.example@demo-outdoor-gear.example",
+      "email_evidence": "linkedin_match",
+      "email_confidence": "verified",
+      "email_source": "sample source",
+      "status": "new",
+      "priority": 2,
+      "vertical": "Americana and outdoor"
+    },
+    {
+      "id": 22,
+      "company_id": 9,
+      "full_name": "Riley Placeholder",
+      "title": "Head of Partnerships",
+      "linkedin_url": null,
+      "email": "riley.placeholder@demo-outdoor-gear.example",
+      "email_evidence": "domain_full_name",
+      "email_confidence": "probable",
+      "email_source": "sample source",
+      "status": "departed",
+      "priority": 3,
+      "vertical": "Americana and outdoor"
+    },
+    {
+      "id": 23,
+      "company_id": 10,
+      "full_name": "Sam Demo",
+      "title": "Founder and CEO",
+      "linkedin_url": "https://profiles.example/sam-demo-23",
+      "email": "sam.demo@example-marketplace.example",
+      "email_evidence": "linkedin_match",
+      "email_confidence": "verified",
+      "email_source": "sample source",
+      "status": "new",
+      "priority": 1,
+      "vertical": "E-commerce and retail"
+    },
+    {
+      "id": 24,
+      "company_id": 10,
+      "full_name": "Morgan Testcase",
+      "title": "Chief Marketing Officer",
+      "linkedin_url": null,
+      "email": null,
+      "email_evidence": "none",
+      "email_confidence": "none",
+      "email_source": null,
+      "status": "new",
+      "priority": 2,
+      "vertical": "E-commerce and retail"
+    },
+    {
+      "id": 25,
+      "company_id": 10,
+      "full_name": "Drew Sample",
+      "title": "General Manager, US",
+      "linkedin_url": "https://profiles.example/drew-sample-25",
+      "email": "drew.sample@example-marketplace.example",
+      "email_evidence": "linkedin_match",
+      "email_confidence": "verified",
+      "email_source": "sample source",
+      "status": "departed",
+      "priority": 3,
+      "vertical": "E-commerce and retail"
+    },
+    {
+      "id": 26,
+      "company_id": 11,
+      "full_name": "Casey Example",
+      "title": "VP Brand",
+      "linkedin_url": "https://profiles.example/casey-example-26",
+      "email": "casey.example@sample-esim-co.example",
+      "email_evidence": "linkedin_match",
+      "email_confidence": "verified",
+      "email_source": "sample source",
+      "status": "new",
+      "priority": 1,
+      "vertical": "Travel and connectivity"
+    },
+    {
+      "id": 27,
+      "company_id": 11,
+      "full_name": "Reese Placeholder",
+      "title": "Head of Growth",
+      "linkedin_url": "https://profiles.example/reese-placeholder-27",
+      "email": "reese.placeholder@sample-esim-co.example",
+      "email_evidence": "linkedin_match",
+      "email_confidence": "verified",
+      "email_source": "sample source",
+      "status": "new",
+      "priority": 2,
+      "vertical": "Travel and connectivity"
+    },
+    {
+      "id": 28,
+      "company_id": 12,
+      "full_name": "Jordan Demo",
+      "title": "Head of Growth",
+      "linkedin_url": "https://profiles.example/jordan-demo-28",
+      "email": "jordan.demo@demo-predictions.example",
+      "email_evidence": "linkedin_match",
+      "email_confidence": "verified",
+      "email_source": "sample source",
+      "status": "new",
+      "priority": 1,
+      "vertical": "Prediction markets"
+    },
+    {
+      "id": 29,
+      "company_id": 12,
+      "full_name": "Quinn Testcase",
+      "title": "Head of Partnerships",
+      "linkedin_url": "https://profiles.example/quinn-testcase-29",
+      "email": "quinn.testcase@demo-predictions.example",
+      "email_evidence": "linkedin_match",
+      "email_confidence": "verified",
+      "email_source": "sample source",
+      "status": "new",
+      "priority": 2,
+      "vertical": "Prediction markets"
+    },
+    {
+      "id": 30,
+      "company_id": 13,
+      "full_name": "Alex Sample",
+      "title": "Head of Partnerships",
+      "linkedin_url": "https://profiles.example/alex-sample-30",
+      "email": "alex.sample@example-streaming.example",
+      "email_evidence": "linkedin_match",
+      "email_confidence": "verified",
+      "email_source": "sample source",
+      "status": "new",
+      "priority": 1,
+      "vertical": "Streaming and entertainment"
+    },
+    {
+      "id": 31,
+      "company_id": 13,
+      "full_name": "Avery Example",
+      "title": "VP Brand",
+      "linkedin_url": null,
+      "email": null,
+      "email_evidence": "none",
+      "email_confidence": "none",
+      "email_source": null,
+      "status": "new",
+      "priority": 2,
+      "vertical": "Streaming and entertainment"
+    },
+    {
+      "id": 32,
+      "company_id": 14,
+      "full_name": "Hayden Placeholder",
+      "title": "VP Brand",
+      "linkedin_url": "https://profiles.example/hayden-placeholder-32",
+      "email": "hayden.placeholder@sample-air.example",
+      "email_evidence": "linkedin_match",
+      "email_confidence": "verified",
+      "email_source": "sample source",
+      "status": "new",
+      "priority": 1,
+      "vertical": "Airlines and aviation"
+    },
+    {
+      "id": 33,
+      "company_id": 14,
+      "full_name": "Jamie Demo",
+      "title": "Head of Growth",
+      "linkedin_url": null,
+      "email": "jamie.demo@sample-air.example",
+      "email_evidence": "pattern_guess",
+      "email_confidence": "unverified",
+      "email_source": "sample source",
+      "status": "new",
+      "priority": 2,
+      "vertical": "Airlines and aviation"
+    },
+    {
+      "id": 34,
+      "company_id": 14,
+      "full_name": "Parker Testcase",
+      "title": "Head of Partnerships",
+      "linkedin_url": "https://profiles.example/parker-testcase-34",
+      "email": "parker.testcase@sample-air.example",
+      "email_evidence": "linkedin_match",
+      "email_confidence": "verified",
+      "email_source": "sample source",
+      "status": "departed",
+      "priority": 3,
+      "vertical": "Airlines and aviation"
+    }
+  ],
+  "research": [
+    {
+      "id": 1,
+      "title": "Race weekend attendance (sample figure)",
+      "numbers": [
+        "120,000"
+      ],
+      "verified": true,
+      "source_note": "Sample verified research item"
+    },
+    {
+      "id": 2,
+      "title": "Broadcast reach (sample figure)",
+      "numbers": [
+        "2.1M"
+      ],
+      "verified": true,
+      "source_note": "Sample verified research item"
+    },
+    {
+      "id": 3,
+      "title": "Hospitality guests per event (sample, unverified)",
+      "numbers": [
+        "1,500"
+      ],
+      "verified": false,
+      "source_note": "Awaiting a source"
+    }
+  ]
+}

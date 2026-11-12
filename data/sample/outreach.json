@@ -1,0 +1,294 @@
+{
+  "_note": "SYNTHETIC SAMPLE DATA. No real person, team, company or address appears in this file.",
+  "accounts": [
+    {
+      "id": 1,
+      "email": "outreach@program-one.example",
+      "domain": "program-one.example",
+      "provider": "m365",
+      "role": "cold",
+      "enabled": true,
+      "dkim_state": "live",
+      "dmarc_state": "p=none",
+      "warmup_required": true,
+      "warmup_days": 21,
+      "warmup_started_offset": -30,
+      "ramp_started_offset": -8,
+      "connected": true,
+      "notes": "Warm and ramping. Carries most first touches."
+    },
+    {
+      "id": 2,
+      "email": "hello@program-two.example",
+      "domain": "program-two.example",
+      "provider": "google_workspace",
+      "role": "cold",
+      "enabled": true,
+      "dkim_state": "live",
+      "dmarc_state": "p=none",
+      "warmup_required": true,
+      "warmup_days": 21,
+      "warmup_started_offset": -9,
+      "ramp_started_offset": null,
+      "connected": true,
+      "notes": "Mid-warmup. Cap is zero until day 21 and a ramp start."
+    },
+    {
+      "id": 3,
+      "email": "team@program-three.example",
+      "domain": "program-three.example",
+      "provider": "m365",
+      "role": "minimal",
+      "enabled": true,
+      "dkim_state": "missing",
+      "dmarc_state": "missing",
+      "warmup_required": true,
+      "warmup_days": 14,
+      "warmup_started_offset": null,
+      "ramp_started_offset": null,
+      "connected": true,
+      "notes": "Held: DKIM and DMARC not live, so it neither warms nor sends."
+    },
+    {
+      "id": 4,
+      "email": "helper@mail-helper.example",
+      "domain": "mail-helper.example",
+      "provider": "gmail_personal",
+      "role": "support",
+      "enabled": true,
+      "dkim_state": "live",
+      "dmarc_state": "p=none",
+      "warmup_required": false,
+      "warmup_days": 0,
+      "warmup_started_offset": null,
+      "ramp_started_offset": null,
+      "connected": true,
+      "notes": "Warmup counterparty only. Never emails prospects."
+    }
+  ],
+  "warmup_schedule": [
+    {
+      "account_id": 1,
+      "day_index": 0,
+      "value": 2
+    },
+    {
+      "account_id": 1,
+      "day_index": 4,
+      "value": 4
+    },
+    {
+      "account_id": 1,
+      "day_index": 8,
+      "value": 7
+    },
+    {
+      "account_id": 1,
+      "day_index": 14,
+      "value": 10
+    },
+    {
+      "account_id": 1,
+      "day_index": 18,
+      "value": 12
+    },
+    {
+      "account_id": 2,
+      "day_index": 0,
+      "value": 2
+    },
+    {
+      "account_id": 2,
+      "day_index": 4,
+      "value": 4
+    },
+    {
+      "account_id": 2,
+      "day_index": 8,
+      "value": 7
+    },
+    {
+      "account_id": 2,
+      "day_index": 14,
+      "value": 10
+    },
+    {
+      "account_id": 2,
+      "day_index": 18,
+      "value": 12
+    },
+    {
+      "account_id": 3,
+      "day_index": 0,
+      "value": 2
+    },
+    {
+      "account_id": 3,
+      "day_index": 4,
+      "value": 4
+    },
+    {
+      "account_id": 3,
+      "day_index": 8,
+      "value": 7
+    },
+    {
+      "account_id": 3,
+      "day_index": 14,
+      "value": 10
+    },
+    {
+      "account_id": 3,
+      "day_index": 18,
+      "value": 12
+    }
+  ],
+  "ramp_schedule": [
+    {
+      "account_id": 1,
+      "day_index": 0,
+      "value": 5
+    },
+    {
+      "account_id": 1,
+      "day_index": 7,
+      "value": 10
+    },
+    {
+      "account_id": 1,
+      "day_index": 14,
+      "value": 20
+    },
+    {
+      "account_id": 2,
+      "day_index": 0,
+      "value": 5
+    },
+    {
+      "account_id": 2,
+      "day_index": 7,
+      "value": 10
+    },
+    {
+      "account_id": 2,
+      "day_index": 14,
+      "value": 20
+    },
+    {
+      "account_id": 3,
+      "day_index": 0,
+      "value": 3
+    }
+  ],
+  "drafts": [
+    {
+      "contact_id": 1,
+      "account_id": 1,
+      "variant": "A",
+      "state": "linted",
+      "created_offset": 0,
+      "subject": "Example Neobank Co and the paddock",
+      "body": "Avery —\n\nYour US card launch needs a room full of owners who decide fast. Our paddock is that room, about 120,000 people across a race weekend, and we introduce partners to the family businesses already in it.\n\nWould you be open to an intro to the team running this?"
+    },
+    {
+      "contact_id": 4,
+      "account_id": 1,
+      "variant": "B",
+      "state": "linted",
+      "created_offset": 0,
+      "subject": "A partnership idea",
+      "body": "Parker —\n\nHosting for 1,500 guests and a stage in front of dealers is what we offer this season. It is a partnership and an introduction, not a decal. Our program would like to show you how it works.\n\nOpen to an intro to the team?"
+    },
+    {
+      "contact_id": 7,
+      "account_id": 1,
+      "variant": "C",
+      "state": "flagged",
+      "created_offset": 0,
+      "subject": "Team Alpha Racing and your US relaunch",
+      "body": "Riley —\n\nTeam Alpha Racing has a seat partner slot open, and Driver 03 would carry your brand into the US relaunch. We would bring the dealers and distributors you want into one room.\n\nWould an introduction to the team be useful?"
+    },
+    {
+      "contact_id": 10,
+      "account_id": 1,
+      "variant": "D",
+      "state": "in_review",
+      "created_offset": -1,
+      "subject": "Sponsorship package",
+      "body": "Hi Pat,\n\nOur sponsorship package is attached at www.program-one.example/deck and covers the full season. It reaches 2.1M viewers.\n\nWorth 15 minutes next week to go through it?"
+    },
+    {
+      "contact_id": 13,
+      "account_id": 1,
+      "variant": "E",
+      "state": "linted",
+      "created_offset": -1,
+      "subject": "Placeholder Challenger Inc and a dealer room",
+      "body": "Jordan —\n\nA short note on a partnership idea for Placeholder Challenger Inc: introductions to family businesses in the paddock, not a logo on a car. Dealer recruitment works best face to face, and a race weekend puts the buyers in one place.\n\nIs this worth an intro to the team?"
+    },
+    {
+      "contact_id": 16,
+      "account_id": 1,
+      "variant": "A",
+      "state": "placed",
+      "created_offset": -2,
+      "subject": "The paddock as a room",
+      "body": "Avery —\n\nYour dealer push needs a room where owners decide on the spot. Our paddock is that room for three days, and we introduce partners to the family businesses already in it. No decal, no deck.\n\nWould you be open to an intro to the team running this?"
+    },
+    {
+      "contact_id": 19,
+      "account_id": 1,
+      "variant": "B",
+      "state": "rejected",
+      "created_offset": -3,
+      "subject": "Quick idea",
+      "body": "Parker —\n\nA short note on an idea for your US launch: meetings with the owners and executives in our paddock, and hosting for your customers at the track. It is a partnership, not a logo on a car.\n\nOpen to an intro to the team?"
+    }
+  ],
+  "suppression": [
+    {
+      "email_key": "riley.placeholder@demo-outdoor-gear.example",
+      "reason": "opt_out",
+      "source": "sample"
+    }
+  ],
+  "settings": {
+    "banned_names": [
+      "Team Alpha Racing",
+      "Team Bravo Motorsport",
+      "Team Charlie GT",
+      "Team Delta Junior",
+      "Team Echo Formula",
+      "Driver 01",
+      "Driver 02",
+      "Driver 03",
+      "Driver 04",
+      "Driver 05",
+      "Driver 06",
+      "Driver 07",
+      "Driver 08",
+      "Driver 09",
+      "Driver 10",
+      "Driver 11",
+      "Driver 12",
+      "Driver 13",
+      "Driver 14",
+      "Driver 15",
+      "Driver 16",
+      "Driver 17",
+      "Driver 18",
+      "Driver 19",
+      "Driver 20",
+      "Driver 21",
+      "Driver 22",
+      "Driver 23",
+      "Driver 24"
+    ],
+    "warmup_allowlist": [
+      "outreach@program-one.example",
+      "hello@program-two.example",
+      "team@program-three.example",
+      "helper@mail-helper.example"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+/* Shared styles for the three tool pages: Talent, Deals, Targets. */
+.toolintro { color: var(--mut); font-size: 13.5px; max-width: 760px; margin: 4px 0 14px; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; margin: 12px 0; }
+.toolbar .lbl { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .6px; color: var(--mut); }
+.kpis.k5 { grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 900px) { .kpis.k5 { grid-template-columns: repeat(5, 1fr); } }
+.scen { color: var(--warn); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .4px; }
+.verif { color: var(--good); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .4px; }
+td .sm { font-size: 12px; color: var(--mut); }
+td.r, th.r { text-align: right; }
+.deal { display: flex; flex-direction: column; gap: 6px; margin-bottom: 10px; }
+.deal .t { font-weight: 700; color: var(--navy); font-size: 14.5px; }
+.deal .parties { font-size: 13px; }
+.deal .parties b { color: var(--navy); }
+.deal .nums { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 12.5px; color: var(--mut); }
+.deal .nums b { color: var(--ink, #111); font-variant-numeric: tabular-nums; }
+.gate { display: inline-block; width: 18px; height: 18px; border-radius: 5px; margin-right: 3px; vertical-align: middle; }
+.gate.pass { background: var(--good); }
+.gate.partial { background: var(--warn); }
+.gate.fail { background: var(--bad); }
+.axes { display: inline-flex; gap: 3px; }
+.axes i { font-style: normal; font-size: 11px; width: 18px; text-align: center; border-radius: 4px; background: var(--panel-3); padding: 1px 0; }
+.democtl { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.democtl .out { font-size: 12.5px; color: var(--mut); }
+.mbx li { padding: 8px 0; border-bottom: 1px solid var(--line-soft); font-size: 13px; list-style: none; }
+.mbx li:last-child { border-bottom: 0; }

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glossary | Pit Wall</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/app.css?v=8">
+<style>
+  .intro { color: var(--mut); font-size: 13.5px; max-width: 640px; margin: 4px 0 6px; }
+  .gsect { margin-top: 22px; }
+  .glist { display: flex; flex-direction: column; }
+  .g { padding: 11px 0; border-bottom: 1px solid var(--line-soft); }
+  .g:last-child { border-bottom: 0; }
+  .g .t { font-weight: 700; font-size: 14px; }
+  .g .code {
+    font-weight: 600; font-size: 11px; color: var(--dim);
+    background: var(--panel-3); border-radius: 6px; padding: 1px 7px; margin-left: 7px;
+    white-space: nowrap;
+  }
+  .g p { color: var(--mut); font-size: 13px; margin-top: 3px; max-width: 640px; }
+  @media (min-width: 900px) {
+    .cols2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 28px; }
+  }
+</style>
+</head>
+<body>
+<header class="appbar" id="appbar"></header>
+<div class="wrap">
+
+  <div class="sect">
+    <div class="secthead"><h2>What do these mean?</h2></div>
+    <p class="intro">Every label and code the product uses, in plain English. You can also tap or hover any chip anywhere in the app for a one-line version of the same explanation.</p>
+  </div>
+
+  <div class="gsect">
+    <div class="secthead"><h2>Contacts and the pipeline</h2></div>
+    <div class="panel cols2 glist">
+      <div class="g"><div class="t">Priority 1<span class="code">was: P1</span></div><p>Best-fit contact. The right person at a company that matches the pitch well. Reach out first.</p></div>
+      <div class="g"><div class="t">Priority 2<span class="code">was: P2</span></div><p>Good fit, second wave. Contacted after the Priority 1 list is working.</p></div>
+      <div class="g"><div class="t">Priority 3<span class="code">was: P3</span></div><p>Long shot or backup contact at a company already covered by someone better placed.</p></div>
+      <div class="g"><div class="t">Not yet contacted<span class="code">was: new</span></div><p>Nothing has been sent to this person yet.</p></div>
+      <div class="g"><div class="t">No name yet<span class="code">was: placeholder</span></div><p>We know the role exists (for example a Head of Sponsorships) but have not found the actual person yet.</p></div>
+      <div class="g"><div class="t">Left the company<span class="code">was: departed</span></div><p>This person moved on from that company, so they will not be contacted.</p></div>
+      <div class="g"><div class="t">Duplicate</div><p>The same person appears twice in the list; the extra copy is hidden and never contacted.</p></div>
+      <div class="g"><div class="t">Email verified<span class="code">was: verified</span></div><p>The address is tied to the person, not just the company, and confirmed deliverable. Safe to send to.</p></div>
+      <div class="g"><div class="t">Unverified email<span class="code">was: unverified</span></div><p>An address was found but not yet confirmed to work. It is not used for sending until it passes a check.</p></div>
+      <div class="g"><div class="t">Ready to email<span class="code">was: sendable pool</span></div><p>Contacts with a verified address who are cleared for outreach. The number the whole pipeline feeds.</p></div>
+      <div class="g"><div class="t">Emails found<span class="code">was: coverage</span></div><p>The share of contacts where an email address has been found at all, verified or not.</p></div>
+      <div class="g"><div class="t">Email source</div><p>Where an address came from, and what ties it to the person: their own profile, the company domain plus their full name, or only the company. Company-only matches are quarantined.</p></div>
+      <div class="g"><div class="t">Industry group<span class="code">was: vertical</span></div><p>The market a company belongs to: Airlines, Crypto, Consumer Tech and so on.</p></div>
+    </div>
+  </div>
+
+  <div class="gsect">
+    <div class="secthead"><h2>Drafts and review</h2></div>
+    <div class="panel cols2 glist">
+      <div class="g"><div class="t">Draft</div><p>An email the system wrote and is holding for your approval. Nothing sends itself, ever.</p></div>
+      <div class="g"><div class="t">Checks passed<span class="code">was: linted</span></div><p>The automatic writing checks (length, tone, facts, links) found no problems with the draft.</p></div>
+      <div class="g"><div class="t">Needs a look<span class="code">was: flagged</span></div><p>The automatic checks raised at least one warning. Read the draft before approving it.</p></div>
+      <div class="g"><div class="t">Too similar<span class="code">was: similarity</span></div><p>The draft reads very close to an email already sent. Repeated wording is a spam signal, so the copy should vary.</p></div>
+      <div class="g"><div class="t">1st email, 2nd email<span class="code">was: touch 1, touch 2</span></div><p>Which email in the sequence this is for that person: the opener, then the follow-up.</p></div>
+      <div class="g"><div class="t">Template A, B, C&hellip;<span class="code">was: variant</span></div><p>Which of the rotating wording templates the draft was written from, so no two prospects get identical copy.</p></div>
+      <div class="g"><div class="t">In Drafts<span class="code">was: placed</span></div><p>You approved it, and the email was saved into the sending account's Drafts folder. It still has not been sent.</p></div>
+      <div class="g"><div class="t">Rejected</div><p>You turned the draft down. The reason is recorded so the same mistake is not repeated.</p></div>
+    </div>
+  </div>
+
+  <div class="gsect">
+    <div class="secthead"><h2>Sending accounts and warmup</h2></div>
+    <div class="panel cols2 glist">
+      <div class="g"><div class="t">Warmup</div><p>For the first weeks, the accounts only email each other with harmless notes. Inbox providers watch this traffic and learn to trust the accounts before any real outreach starts.</p></div>
+      <div class="g"><div class="t">Outreach account<span class="code">was: cold</span></div><p>An account that sends the real emails to prospects once its warmup is done.</p></div>
+      <div class="g"><div class="t">Warmup helper<span class="code">was: support</span></div><p>An account that only sends and receives warmup mail with our own accounts. It never emails prospects.</p></div>
+      <div class="g"><div class="t">Volume ramp-up<span class="code">was: ramp</span></div><p>After warmup, real sending starts tiny and grows slowly, so the volume never looks suspicious.</p></div>
+      <div class="g"><div class="t">Parked</div><p>An account that is not running yet, either waiting on DNS records or not signed in.</p></div>
+      <div class="g"><div class="t">Not signed in<span class="code">was: no credentials</span></div><p>The site has no saved login for the mailbox, so it cannot place drafts or send warmup mail from it. Connect the mailbox, then it joins the rotation by itself.</p></div>
+      <div class="g"><div class="t">Microsoft 365<span class="code">was: Graph</span></div><p>How the site connects to Outlook and Microsoft-hosted mailboxes (through Microsoft's Graph system).</p></div>
+      <div class="g"><div class="t">Gmail<span class="code">was: IMAP</span></div><p>How the site connects to Gmail mailboxes (through the standard IMAP mail protocol).</p></div>
+      <div class="g"><div class="t">Automatic run<span class="code">was: cron</span></div><p>The scheduled job that sends warmup mail by itself several times a day, at irregular times.</p></div>
+    </div>
+  </div>
+
+  <div class="gsect">
+    <div class="secthead"><h2>Domain records and delivery</h2></div>
+    <div class="panel cols2 glist">
+      <div class="g"><div class="t">Waiting on DNS<span class="code">was: held, DNS-held</span></div><p>The account is paused because its domain's email records are not live yet. It starts by itself once they are.</p></div>
+      <div class="g"><div class="t">DKIM</div><p>A DNS record that puts a signature on outgoing mail, proving it really comes from your domain.</p></div>
+      <div class="g"><div class="t">DMARC</div><p>A DNS record that tells inboxes what to do with mail that fails the DKIM check. Together they keep mail out of spam.</p></div>
+      <div class="g"><div class="t">SPF</div><p>A DNS record listing which servers are allowed to send mail for a domain. A wrong entry can block everything.</p></div>
+      <div class="g"><div class="t">Landed in inbox<span class="code">was: delivered</span></div><p>The share of our mail that arrived in the inbox rather than the spam folder.</p></div>
+    </div>
+  </div>
+
+</div>
+<nav class="tabbar" id="tabbar"></nav>
+<script src="/assets/app.js?v=8"></script>
+<script>renderShell("", "Glossary");</script>
+</body>
+</html>

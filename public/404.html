@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Not found | Pit Wall</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+  :root { --bg: #f4f2fa; --panel: #ffffff; --line: #e6e1f0; --navy: #10122b; --ink: #1c1e33; --mut: #5d6076; --accent: #7220b4; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .card {
+    width: 100%;
+    max-width: 380px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 28px 24px;
+    text-align: center;
+  }
+  .flag { width: 34px; height: 34px; margin-bottom: 12px; }
+  h1 { font-size: 18px; font-weight: 750; margin-bottom: 6px; color: var(--navy); }
+  p { color: var(--mut); font-size: 13px; margin-bottom: 18px; }
+  a { color: var(--accent); text-decoration: none; font-size: 14px; font-weight: 600; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <svg class="flag" viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="0" y="0" width="24" height="24" rx="5" fill="#fff"/>
+      <rect x="0" y="0" width="8" height="8" fill="#10122b"/>
+      <rect x="16" y="0" width="8" height="8" fill="#10122b"/>
+      <rect x="8" y="8" width="8" height="8" fill="#10122b"/>
+      <rect x="0" y="16" width="8" height="8" fill="#10122b"/>
+      <rect x="16" y="16" width="8" height="8" fill="#10122b"/>
+    </svg>
+    <h1>Page not found</h1>
+    <p>That page is not on the pit wall.</p>
+    <a href="/">Back to the dashboard</a>
+  </div>
+</body>
+</html>

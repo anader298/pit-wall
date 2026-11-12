@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacts | Pit Wall</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/app.css?v=8">
+<link rel="stylesheet" href="/assets/contacts.css?v=7">
+</head>
+<body>
+<header class="appbar" id="appbar"></header>
+<div class="wrap">
+  <div class="topcontrols">
+    <div class="seg">
+      <button id="tabContacts" type="button">Contacts <span class="c num" id="nContacts"></span></button>
+      <button id="tabCompanies" type="button">Companies <span class="c num" id="nCompanies"></span></button>
+    </div>
+    <div class="crow">
+      <div class="searchbar" id="sbar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-3.8-3.8"/></svg>
+        <input id="q" type="search" placeholder="Search name, title, email, company" autocomplete="off" aria-label="Search">
+        <button class="clr" id="qclr" type="button" aria-label="Clear search">&times;</button>
+      </div>
+      <button class="btn sm dlbtn" id="dl" type="button" title="Download what's shown as a spreadsheet (CSV)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 11 5 5 5-5"/><path d="M5 20h14"/></svg>
+        Download
+      </button>
+    </div>
+  </div>
+
+  <div id="contactsView">
+    <div class="fchips statuschips" id="fchips" aria-label="Filter by status"></div>
+
+    <div class="clist" id="clist"></div>
+
+    <div class="tablewrap deskonly">
+      <table>
+        <thead>
+          <tr><th data-sort="full_name" title="Sort">Name</th>
+          <th data-sort="title" title="Sort">Title</th>
+          <th data-sort="company_name" title="Sort">Company</th>
+          <th data-sort="email" title="Sort">Email</th>
+          <th data-sort="status" title="Sort">Status</th>
+          <th data-sort="priority" title="Sort"><span data-tip="Priority 1 is the best fit, reach out first. Priority 3 is a long shot." tabindex="0">Priority</span></th></tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+
+    <div class="pager" id="pager"></div>
+    <p class="lgnd">Priority 1 = best fit, reach out first. Priority 2 = good fit.
+      Priority 3 = long shot. Tap any label for a one-line explanation, or open the full
+      <a href="/glossary.html">glossary</a>.</p>
+  </div>
+
+  <div id="companiesView" style="display:none">
+    <div class="clist" id="colist"></div>
+
+    <div class="tablewrap deskonly">
+      <table>
+        <thead>
+          <tr><th data-sort="name" title="Sort">Company</th>
+          <th data-sort="vertical" title="Sort"><span data-tip="The market a company belongs to: Airlines, Consumer Tech, Crypto and so on." tabindex="0">Industry group</span></th>
+          <th data-sort="status" title="Sort">Status</th>
+          <th data-sort="contact_count" title="Sort">Contacts</th>
+          <th data-sort="with_email" title="Sort"><span data-tip="How many of the company's contacts have an email address at all, verified or not." tabindex="0">Emails found</span></th>
+          <th data-sort="verified_emails" title="Sort"><span data-tip="How many addresses were checked and confirmed deliverable." tabindex="0">Emails verified</span></th></tr>
+        </thead>
+        <tbody id="corows"></tbody>
+      </table>
+    </div>
+
+    <p class="lgnd"><span id="cocount" class="num"></span> &middot; Tap a company for why it fits.
+      Bars show how many of its contacts have an email address.</p>
+  </div>
+</div>
+<nav class="tabbar" id="tabbar"></nav>
+
+<script src="/assets/app.js?v=8"></script>
+<script src="/assets/contacts.js?v=7"></script>
+</body>
+</html>
