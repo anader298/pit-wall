@@ -4,7 +4,7 @@ Mapping the paddock as a market. One usable profile of every participant in a ra
 
 **Case study:** [dandoungroup.com/case-studies/#pit-wall](https://dandoungroup.com/case-studies/#pit-wall) · **Live app:** [pitwall.dandoungroup.com](https://pitwall.dandoungroup.com/) (private, login required)
 
-> **About this repo.** This is a public snapshot of a private application. The live app runs on the real paddock dataset and is updated continuously: new profiles, deals, targets and outreach rules land there first. This copy is fixed at the point it was published, runs on synthetic data, and is not updated alongside the live app.
+> **About this repo.** This is a public snapshot of a private application. The live app runs on the real paddock dataset, which race programs license and pay for. To protect that license, this public copy runs only on synthetic data: every name, company, address and figure here is made up, so the app can be demoed without exposing anything a client paid for. The live app is updated continuously, with new profiles, deals, targets and outreach rules landing there first; this copy is fixed at the point it was published and is not updated alongside it.
 
 ![Review queue: drafts with their automatic checks, blocked ones cannot be approved](docs/screenshots/queue.png)
 
