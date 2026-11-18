@@ -1,5 +1,7 @@
 # Pit Wall
 
+[![tests](https://github.com/anader298/pit-wall/actions/workflows/test.yml/badge.svg)](https://github.com/anader298/pit-wall/actions/workflows/test.yml)
+
 Mapping the paddock as a market. Pit Wall holds one usable profile of every participant in a racing paddock, and runs three tools on it:
 
 1. **Sponsorship finder.** Finds outside businesses with a real reason to be at the track, checks they can sign without a committee, and works their decision makers as sponsors.
@@ -157,7 +159,7 @@ Use: Analyze (deals), Screen (sponsors), Automate (outreach). Lever: commercial,
 
 - **Playbook or agent, and why.** A playbook with model steps inside; anything that can do harm (volume, recipients, figures, deal values) is code.
 - **How it was built.** A 29 Jul overnight review with a skeptic pass: 50 findings, 49 fixed.
-- **How it's checked.** 33 tests (`npm test`) show each guardrail refuses on its own. Next: an adversarial number set and CI.
+- **How it's checked.** 33 tests (`npm test`) show each guardrail refuses on its own. GitHub Actions runs the type check and tests on every push. Next: an adversarial number set.
 - **Limits.** The number check skips numbers in words and small integers; model steps have no labelled eval. See [Limits](#limits).
 
 How I build with AI: [github.com/anader298/how-i-build-with-ai](https://github.com/anader298/how-i-build-with-ai)
