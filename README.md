@@ -10,7 +10,9 @@ Created for one race program heading into the Indy 500, across IndyCar and IMSA,
 
 **Case study:** [dandoungroup.com/case-studies/#pit-wall](https://dandoungroup.com/case-studies/#pit-wall) · **Live app:** [pitwall.dandoungroup.com](https://pitwall.dandoungroup.com/) (private, login required)
 
-> **About this repo.** This is a public snapshot of a private application. The live app runs on the real paddock dataset, which race programs license and pay for. To protect that license, this public copy runs only on synthetic data: every name, company, address and figure here is made up, so the app can be demoed without exposing anything a client paid for. The live app is updated continuously, with new profiles, deals, targets and outreach rules landing there first; this copy is fixed at the point it was published and is not updated alongside it.
+> **About this repo.** This is a public snapshot of a private application. The live app runs on the real paddock dataset, which race programs license and pay for. To protect that data, this public copy runs only on synthetic data: every name, company, address and figure here is made up, so the app can be demoed without exposing anything a client paid for. The live app is updated continuously, with new profiles, deals, targets and outreach rules landing there first; this copy is fixed at the point it was published and is not updated alongside it.
+>
+> **History.** The live system was built privately from July to October 2026, as a Python app on a Mac and a TypeScript web app, and it holds real contacts, so its history stays private. This repo is a runnable model of it, published on 11 Nov 2026 with two README edits on 12 Nov, and every change since lands as its own commit.
 
 ![Review queue: drafts with their automatic checks, blocked ones cannot be approved](docs/screenshots/queue.png)
 
@@ -135,6 +137,7 @@ To regenerate the sample data: `npm run sample-data`. To typecheck: `npm install
 
 To deploy the sample to Netlify, set `PITWALL_PASSWORD`, `SESSION_SECRET` and `CRON_SECRET` (see `.env.example`) and deploy; there is no build command.
 
+
 ## Author
 
-Anthony Nader. A side project. MIT licensed.
+Anthony Nader, Dandoun Group. MIT licensed.
