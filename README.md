@@ -138,6 +138,30 @@ To regenerate the sample data: `npm run sample-data`. To typecheck: `npm install
 To deploy the sample to Netlify, set `PITWALL_PASSWORD`, `SESSION_SECRET` and `CRON_SECRET` (see `.env.example`) and deploy; there is no build command.
 
 
+## Methodology
+
+Use: Analyze (deals), Screen (sponsors), Automate (outreach). Lever: commercial, demand and supplier levers inside a racing paddock, plus sponsor revenue. The deal levers, as `src/deals/model.ts` runs them:
+
+- **Commercial.** Who can sell to whom: paddock businesses paired as seller and buyer by category, each deal sized at low, base and high cases with a five-year NPV. People set the terms of an intro, such as how savings fund the seats.
+- **Demand.** What each family business buys (revenue times its industry's spend share). Pooled programs bundle up to four families into one contract with a series partner.
+- **Supplier.** Every seller is already in the paddock, so the relationship is the advantage. All sellers in a category are listed, a start for a second source.
+- **Cost analysis.** Top-down unit economics (spend share, seller capacity, capture, margin), with no bottom-up should-cost. Weak revenue evidence or a cross-border deal lowers the rank.
+
+| Step | Done by | Check |
+|---|---|---|
+| Suggest companies, scores, contacts | Model in the live app | Code applies gates, score and identity ladder |
+| Size deals and NPV | Code | NPV and seller-capacity tests |
+| Daily caps, warm-up | Code | Cap is zero for every unsafe condition |
+| Write the draft | Model live; templates here | Scorecard and number allowlist in code |
+| Approve, then send | Person | The draft adapter cannot send |
+
+- **Playbook or agent, and why.** A playbook with model steps inside; anything that can do harm (volume, recipients, figures, deal values) is code.
+- **How it was built.** A 29 Jul overnight review with a skeptic pass: 50 findings, 49 fixed.
+- **How it's checked.** 33 tests (`npm test`) show each guardrail refuses on its own. Next: an adversarial number set and CI.
+- **Limits.** The number check skips numbers in words and small integers; model steps have no labelled eval. See [Limits](#limits).
+
+How I build with AI: [github.com/anader298/how-i-build-with-ai](https://github.com/anader298/how-i-build-with-ai)
+
 ## Author
 
 Anthony Nader, Dandoun Group. MIT licensed.
