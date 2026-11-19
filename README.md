@@ -43,13 +43,21 @@ Two questions had the same shape:
 
 **Licensed.** Built for one program and licensed to other programs since.
 
-| Talent | Targets |
-|---|---|
-| ![Talent: driver lists with wealth shown as verified or as a labelled scenario](docs/screenshots/talent.png) | ![Targets: four gates and a five-axis score](docs/screenshots/targets.png) |
+**Talent.** Driver lists with wealth shown as verified or as a labelled scenario.
 
-| Deals | Dashboard |
-|---|---|
-| ![Deals: pooled programs and pairs with low, base and high cases](docs/screenshots/deals.png) | ![Dashboard: per-account caps, warm-up and DNS gates](docs/screenshots/dashboard.png) |
+![Talent: driver lists with wealth shown as verified or as a labelled scenario](docs/screenshots/talent.png)
+
+**Targets.** Four gates and a five-axis score.
+
+![Targets: four gates and a five-axis score](docs/screenshots/targets.png)
+
+**Deals.** Pooled programs and pairs with low, base and high cases.
+
+![Deals: pooled programs and pairs with low, base and high cases](docs/screenshots/deals.png)
+
+**Dashboard.** Per-account caps, warm-up and DNS gates.
+
+![Dashboard: per-account caps, warm-up and DNS gates](docs/screenshots/dashboard.png)
 
 ## How it works
 
